@@ -1,0 +1,26 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+hr {
+    height: .5px;
+    background: rgba(0, 0, 0, 0.021);
+}
+
+.mainContainer {
+    width: 50%;
+}
+
+.signupSection {
+    width: 80%;
+}
+
+.greyBox {
+    background: rgba(0, 0, 0, 0.2);
+    height: 1.8em;
+    width: 100%;
+}
