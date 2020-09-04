@@ -29,29 +29,23 @@ hr {
 }
 
 .signupSection {
-	width: 50%;
+	width: 25.5em;
 	margin: 0 auto;
 }
 
 .descSection {
-	width: 40%;
+	width: 23em;
 	margin: 0 auto;
+	padding-bottom: 1.45em;
 }
 
 .skewedBg {
-	background-image: url('page2background_v3.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('page2background_v3.jpg');
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
 	height: 19em;
 	clip-path: polygon(0 0%, 0 100%, 100% 82%, 100% 0%);
-}
-
-.signupSection {
-}
-
-.descSection {
-	padding-bottom: 1.45em;
 }
 
 .btn {
