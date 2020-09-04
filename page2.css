@@ -9,12 +9,6 @@ h3 {
 	font-weight: bold;
 }
 
-h2 {
-	font-size: 2.8em;
-	color: whitesmoke;
-	font-weight: 800;
-}
-
 i {
 	font-size: 1.5em;
 }
@@ -25,29 +19,13 @@ hr {
 }
 
 .mainContainer {
-	width: 100%;
+	width: 70%;
 }
 
-.signupSection {
-	width: 50%;
-	margin: 0 auto;
-}
-
+.signupSection,
 .descSection {
-	width: 40%;
+	width: 60%;
 	margin: 0 auto;
-}
-
-.skewedBg {
-	background-image: url('page2background_v3.jpg');
-	background-position: center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-	height: 19em;
-	clip-path: polygon(0 0%, 0 100%, 100% 82%, 100% 0%);
-}
-
-.signupSection {
 }
 
 .descSection {
