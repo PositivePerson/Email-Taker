@@ -42,7 +42,7 @@ hr {
 }
 
 .skewedBg {
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('page2background_v3.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('page1background_v3.jpg');
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
