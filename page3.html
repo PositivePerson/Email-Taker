@@ -16,12 +16,21 @@
             <h2>teszt</h2>
             <h3 class="greyText">Enter with you email adress or facebook:</h3>
 
-            <div class="form-group mx-auto">
+            <!-- <div class="form-group mx-auto">
                 <i class="far fa-envelope"></i>
                 <input class="form-field" type="email" placeholder="Enter Your Email">
+            </div> -->
+
+            <div class="formBox d-flex flex-row justify-content-center">
+                <div class="form-group">
+                    <span><i class="far fa-envelope"></i></span>
+                    <input class="form-field" type="email" placeholder="Email">
+                </div>
+                <button class="btn d-flex align-items-center">Enter<i class="fas fa-chevron-right pl-2"></i></button>
             </div>
 
-            <hr>
+
+            <hr style="margin-bottom: .1em;">
             <div class="timeLeftCaption d-flex">
                 <span>
                     <h4>TIME LEFT</h4>
@@ -37,17 +46,17 @@
                         <div class="days">22</div>
                         <div><h4>DAYS</h4></div>
                     </div>
-                    :
+                    <div class="colon">:</div>
                     <div>
                         <div class="hours">23</div>
                         <div><h4>HOURS</h4></div>
                     </div>
-                    :
+                    <div class="colon">:</div>
                     <div>
                         <div class="min">6</div>
                         <div><h4>MIN</h4></div>
                     </div>
-                    :
+                    <div class="colon">:</div>
                     <div>
                         <div class="sec">19</div>
                         <div><h4>SEC</h4></div>
