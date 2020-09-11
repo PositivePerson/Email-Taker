@@ -1,0 +1,166 @@
+body {
+	font-family: 'Lato', sans-serif;
+    line-height: 1.55;
+    color:rgb(50, 50, 50);
+
+    height: 100vh;
+    padding-top: .5em;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+h2 {
+    font-size: 1.8em;
+	font-weight: 800;
+	letter-spacing: 0.018em;
+
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: .60em;
+    font-weight: 800;
+}
+
+i {
+	font-size: 1.3em;
+}
+
+.privacy_and_conditions {
+    font-size: .65em;
+    font-weight: 600;
+
+    background: rgb(243, 243, 243);
+}
+
+.btn {
+	background: rgb(42, 199, 173);
+	color: whitesmoke;
+	font-weight: 600;
+	font-size: .9em;
+	line-height: 30px;
+}
+
+.btn:hover {
+	color: white;
+}
+
+.greyText {
+	color: #686868;
+}
+
+.greenText {
+	color: rgb(85, 212, 85);
+}
+
+
+/* ---------------------- I N P U T ----------------------  */
+:root {
+	--input-color: #343a40;
+	--input-border: #cdd9ed;
+	--input-background: #fff;
+	--input-placeholder: #757575;
+	--input-border-focus: #275efe;
+	--group-color: var(--input-color);
+	--group-border: var(--input-border);
+	--group-background: #eef4ff;
+	--group-color-focus: #fff;
+	--group-border-focus: var(--input-border-focus);
+	--group-background-focus: #678efe;
+}
+.form-field {
+	display: block;
+	width: 100%;
+	padding: 8px 16px;
+	line-height: 25px;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: inherit;
+	border-radius: 3px;
+	-webkit-appearance: none;
+	color: var(--input-color);
+	border: 1px solid var(--input-border);
+	background: var(--input-background);
+	transition: border 0.3s ease;
+}
+.form-field::placeholder {
+	color: var(--input-placeholder);
+}
+.form-field:focus {
+	outline: none;
+	border-color: var(--input-border-focus);
+}
+.form-group {
+	position: relative;
+	display: flex;
+	width: 100%;
+
+	margin-bottom: .6em;
+}
+.form-group > span,
+.form-group .form-field {
+	white-space: nowrap;
+	display: block;
+}
+.form-group > span:not(:first-child):not(:last-child),
+.form-group .form-field:not(:first-child):not(:last-child) {
+	border-radius: 0;
+}
+.form-group > span:first-child,
+.form-group .form-field:first-child {
+	border-radius: 3px 0 0 3px;
+}
+.form-group > span:last-child,
+.form-group .form-field:last-child {
+	border-radius: 0 3px 3px 0;
+}
+.form-group > span:not(:first-child),
+.form-group .form-field:not(:first-child) {
+	margin-left: -1px;
+}
+.form-group .form-field {
+	position: relative;
+	z-index: 1;
+	flex: 1 1 auto;
+	width: 1%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.form-group > span {
+	text-align: center;
+	padding: 8px 12px;
+	font-size: 14px;
+	line-height: 25px;
+	color: var(--group-color);
+	background: var(--group-background);
+	border: 1px solid var(--group-border);
+	transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+.form-group:focus-within > span {
+	color: var(--group-color-focus);
+	background: var(--group-background-focus);
+	border-color: var(--group-border-focus);
+}
+html {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+* {
+	box-sizing: inherit;
+}
+*:before,
+*:after {
+	box-sizing: inherit;
+}
