@@ -5,23 +5,28 @@ body {
 
     height: 100vh;
     padding-top: .5em;
-    margin: 0;
+	margin: 0;
+	
+	background: rgb(243, 243, 243);
 }
 
 h1,
 h2,
 h3 {
-	font-weight: bold;
 	line-height: 1.4;
 }
 
-h2 {
-    font-size: 1.8em;
+h1 {
+	font-size: 1.5em;
 	font-weight: 800;
+}
+
+h2 {
+    font-size: 1.2em;
+	font-weight: 400;
 	letter-spacing: 0.018em;
 
 	margin-bottom: .5em;
-	text-align: center;
 }
 
 h3 {
@@ -34,23 +39,52 @@ h4 {
     font-weight: 800;
 }
 
+h5 {
+	font-size: .75em;
+}
+
 i {
 	font-size: 1.3em;
 }
 
+p {
+    font-size: .8em;
+}
+
+.mainContext {
+	background: white;
+	padding: 1.0em;
+	border-radius: .65em;
+
+	width: 20em;
+	
+    -webkit-box-shadow: 0px 15px 33px -12px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 15px 33px -12px rgba(0,0,0,0.5);
+	box-shadow: 0px 15px 33px -12px rgba(0,0,0,0.5);
+}
+
+.videoSide {
+	width: 20em;
+}
+
 .privacy_and_conditions {
     font-size: .65em;
-    font-weight: 600;
+    font-weight: 800;
+}
 
-    background: rgb(243, 243, 243);
+.notSpam {
+	font-weight: 600;
+
+    margin-top: 1.5em;
+	margin-bottom: 0;
 }
 
 .btn {
 	background: rgb(42, 199, 173);
 	color: whitesmoke;
 	font-weight: 600;
-	font-size: .9em;
-	line-height: 30px;
+	font-size: .8em;
+	line-height: 22px;
 }
 
 .btn:hover {
@@ -65,26 +99,25 @@ i {
 	color: rgb(85, 212, 85);
 }
 
+/* ---------------------- V I D E O ----------------------  */
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
 
 /* ---------------------- I N P U T ----------------------  */
 :root {
 	--input-color: #343a40;
-	--input-border: #cdd9ed;
-	--input-background: #fff;
-	--input-placeholder: #757575;
-	--input-border-focus: #275efe;
-	--group-color: var(--input-color);
+	--input-border:  rgb(243, 243, 243);
+	--input-background: rgb(243, 243, 243);
+	--input-placeholder: #6e6e6e;
+	--group-color: #6e6e6e;
 	--group-border: var(--input-border);
-	--group-background: #eef4ff;
-	--group-color-focus: #fff;
-	--group-border-focus: var(--input-border-focus);
-	--group-background-focus: #678efe;
 }
 .form-field {
 	display: block;
 	width: 100%;
-	padding: 8px 16px;
-	line-height: 25px;
+	padding: 8px 0;
+	line-height: 15px;
 	font-size: 14px;
 	font-weight: 500;
 	font-family: inherit;
@@ -93,42 +126,36 @@ i {
 	color: var(--input-color);
 	border: 1px solid var(--input-border);
 	background: var(--input-background);
-	transition: border 0.3s ease;
+    transition: border 0.3s ease;
+	border-left-color: rgb(243, 243, 243);
+
 }
 .form-field::placeholder {
 	color: var(--input-placeholder);
 }
 .form-field:focus {
 	outline: none;
-	border-color: var(--input-border-focus);
 }
 .form-group {
 	position: relative;
 	display: flex;
 	width: 100%;
+	background: rgb(243, 243, 243);
 
-	margin-bottom: .6em;
+	border-radius: .4em;
+	overflow: hidden;
+
+	margin-bottom: 1.0em;
 }
 .form-group > span,
 .form-group .form-field {
 	white-space: nowrap;
 	display: block;
 }
-.form-group > span:not(:first-child):not(:last-child),
-.form-group .form-field:not(:first-child):not(:last-child) {
-	border-radius: 0;
-}
-.form-group > span:first-child,
-.form-group .form-field:first-child {
-	border-radius: 3px 0 0 3px;
-}
-.form-group > span:last-child,
-.form-group .form-field:last-child {
-	border-radius: 0 3px 3px 0;
-}
 .form-group > span:not(:first-child),
 .form-group .form-field:not(:first-child) {
 	margin-left: -1px;
+	font-weight: 600;
 }
 .form-group .form-field {
 	position: relative;
@@ -140,18 +167,12 @@ i {
 }
 .form-group > span {
 	text-align: center;
-	padding: 8px 12px;
-	font-size: 14px;
-	line-height: 25px;
+	padding: 13.5px 18px;
+	font-size: 13px;
+	line-height: 13px;
 	color: var(--group-color);
-	background: var(--group-background);
 	border: 1px solid var(--group-border);
 	transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
-}
-.form-group:focus-within > span {
-	color: var(--group-color-focus);
-	background: var(--group-background-focus);
-	border-color: var(--group-border-focus);
 }
 html {
 	box-sizing: border-box;
