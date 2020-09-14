@@ -45,7 +45,6 @@ i {
 }
 
 .mainContainer {
-	width: 25.5em;
 
 	margin: 0 auto;
 	padding-top: 5em;
@@ -172,6 +171,9 @@ i {
 	border: 1px solid var(--group-border);
 	transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
 }
+.form-group > span:first-child {
+	width: 41.4px;
+}
 .form-group:focus-within > span {
 	color: var(--group-color-focus);
 	background: var(--group-background-focus);
@@ -187,4 +189,59 @@ html {
 *:before,
 *:after {
 	box-sizing: inherit;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	body {
+		padding-top: 0;
+	}
+
+	.videoSide {
+		max-width: 20em;
+		padding-bottom: .5em;
+		margin: 0 auto;
+	}
+
+	.video-container {
+		height: 15em;
+	}
+
+	.mainContext {
+		max-width: 20em;
+		margin: 0 auto;
+	}
+
+	.context {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.mainContainer {
+		width: 25.5em;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.mainContainer {
+		width: 25.5em;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.mainContainer {
+		width: 25.5em;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.mainContainer {
+		width: 25.5em;
+	}
 }
