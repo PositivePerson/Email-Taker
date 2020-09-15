@@ -222,6 +222,26 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
 	.mainContainer {
 		width: 25.5em;
+
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		  transform: translate(-50%, -50%);
+		  
+		padding-top: 0;
+	}
+
+	.mainBox {
+		margin-bottom: 0;
+	}
+
+	.footer {
+		position: absolute;
+		left: 50%;
+		bottom: -4em;
+		transform: translate(-50%, 0);
+
+		padding-bottom: 1em;
 	}
 }
 
