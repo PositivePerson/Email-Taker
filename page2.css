@@ -11,6 +11,7 @@ body {
 	backdrop-filter: blur(10px);
 
 	height: 100vh;
+	min-height: 29em;
 }
 
 h1,
@@ -47,7 +48,7 @@ i {
 .mainContainer {
 
 	margin: 0 auto;
-	padding-top: 5em;
+	/* padding-top: 5em; */
 }
 
 .mainBox {
@@ -56,7 +57,7 @@ i {
 
 	padding: 1.5em;
 	padding-bottom: 1.15em;
-	margin-bottom: 4.5em;
+	/* margin-bottom: 4.5em; */
 }
 
 .forms {
@@ -189,6 +190,41 @@ html {
 *:before,
 *:after {
 	box-sizing: inherit;
+}
+
+/* ----------------- C E N T E R   M A I N B O X -----------------*/
+.mainContainer {
+	width: 25.5em;
+
+	position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  
+	padding-top: 0;
+}
+
+.mainBox {
+	margin-bottom: 0;
+}
+
+.footer {
+	position: absolute;
+	left: 50%;
+	bottom: -4em;
+	transform: translate(-50%, 0);
+
+	padding-bottom: 1em;
+}
+
+@media (max-width: 425px) {
+	.mainContainer {
+		width: 100%;
+		max-width: 25.5em;
+
+		/* top: 15px;
+		transform: translate(-50%, 0); */
+	}
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
