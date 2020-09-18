@@ -10,7 +10,7 @@ h3 {
 }
 
 h2 {
-	font-size: 2.8em;
+	font-size: 2.4em;
 	color: whitesmoke;
 	font-weight: 800;
 
@@ -247,6 +247,19 @@ hr {
     margin-left: 0;
 	}
 
+	.skewedBg {
+		height: 23em;
+	}
+
+	.my-custom-3 {
+		margin-top: 1.3em;
+		margin-bottom: 1em;
+
+		max-width: 24em;
+
+		color: whitesmoke;
+	}
+
 	.signupSection {
 		width: unset;
 		padding: 0 .5em;
@@ -260,5 +273,12 @@ hr {
 	.descSection {
 		width: unset;
 		max-width: 23em;
+
+		padding-top: 0 !important;
+	}
+
+	.rm-px {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
